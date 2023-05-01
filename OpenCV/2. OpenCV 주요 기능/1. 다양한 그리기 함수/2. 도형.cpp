@@ -26,6 +26,8 @@ int main() {
     pts.push_back(Point(350, 350));
     pts.push_back(Point(250, 350));
 
+    polylines(img, pts, true, Scalar(255, 0, 255), 2);
+
     imshow("result", img);
     waitKey(0);
 
