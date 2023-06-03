@@ -16,9 +16,9 @@ int main() {
     R2 = R;
     R3 = R + P;
 
-    rectangle(A, R1, Scalar(0, 0, 255));
-    rectangle(A, R2, Scalar(255, 0, 0));
-    rectangle(A, R3, Scalar(0, 255, 0));
+    rectangle(A, R1, Scalar(0, 0, 255)); // R
+    rectangle(A, R2, Scalar(255, 0, 0)); // B
+    rectangle(A, R3, Scalar(0, 255, 0)); // G
 
     imshow("result", A);
     waitKey(0);

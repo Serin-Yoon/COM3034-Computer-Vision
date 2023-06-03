@@ -7,7 +7,7 @@ using namespace std;
 using namespace cv;
 
 int main() {
-    Mat src = imread("images/lenna.bmp", IMREAD_COLOR);
+    Mat src = imread("OpenCV/images/lenna.bmp", IMREAD_COLOR);
     if (src.empty()) {
         cerr << "Image load failed!" << endl;
         return -1;

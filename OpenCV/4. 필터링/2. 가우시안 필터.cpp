@@ -7,7 +7,7 @@ using namespace std;
 using namespace cv;
 
 int main() {
-    Mat src = imread("images/dog.bmp", IMREAD_GRAYSCALE);
+    Mat src = imread("OpenCV/images/dog.bmp", IMREAD_GRAYSCALE);
     if (src.empty()) {
         cerr << "Image load failed!" << endl;
         return -1;

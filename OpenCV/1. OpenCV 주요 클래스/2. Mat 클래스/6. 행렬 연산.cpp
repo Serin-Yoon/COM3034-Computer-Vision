@@ -19,5 +19,13 @@ int main() {
     cout << "mat1 + mat2:" << endl << mat1 + mat2 << endl << endl;
     cout << "mat1 * mat2:" << endl << mat1 * mat2 << endl << endl; // matrix multiplication
 
+    float data1[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+    Mat mat3(3, 3, CV_32FC1, data1);
+    Mat mat4 = Mat::ones(3, 3, CV_32FC1);
+    
+    cout << mattt << endl;
+    cout << mat3 * mat4 << endl;
+    cout << mat3.mul(mat4) << endl;
+
     return 0;
 }

@@ -7,7 +7,7 @@ using namespace std;
 using namespace cv;
 
 int main() {
-    Mat img1 = imread("images/dog.bmp");
+    Mat img1 = imread("OpenCV/images/dog.bmp");
     Mat img2 = img1; // shallow copy
     Mat img3;
     img3 = img1; // shallow copy

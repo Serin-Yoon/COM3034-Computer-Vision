@@ -47,7 +47,7 @@ int main() {
 
 Ptr <KNearest> train_knn() {
     /* 데이터셋 */
-    Mat digits = imread("images/digits.png", IMREAD_GRAYSCALE);
+    Mat digits = imread("./images/digits.png", IMREAD_GRAYSCALE);
     if (digits.empty()) {
         cerr << "Image load failed!" << endl;
         return 0;

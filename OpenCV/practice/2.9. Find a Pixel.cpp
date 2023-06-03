@@ -8,7 +8,7 @@ using namespace cv;
 
 int main() {
     Mat img;
-    img = imread("images/read_gray.jpg", IMREAD_GRAYSCALE);
+    img = imread("OpenCV/images/read_gray.jpg", IMREAD_GRAYSCALE);
     Point2i pt;
 
     for (int j = 0; j < img.rows; j++) {

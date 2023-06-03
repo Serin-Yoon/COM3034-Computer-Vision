@@ -7,7 +7,7 @@ using namespace std;
 using namespace cv;
 
 int main() {
-    Mat A = imread("images/cat.bmp");
+    Mat A = imread("OpenCV/images/cat.bmp");
     Mat B = A.clone();
 
     Mat A_t = A(Rect(250, 100, 300, 200));

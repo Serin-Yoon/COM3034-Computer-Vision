@@ -7,7 +7,7 @@ using namespace std;
 using namespace cv;
 
 int main() {
-    Mat img1 = imread("images/lenna.bmp", IMREAD_GRAYSCALE);
+    Mat img1 = imread("OpenCV/images/lenna.bmp", IMREAD_GRAYSCALE);
     Mat img1f;
     img1.convertTo(img1f, CV_32FC1);
 

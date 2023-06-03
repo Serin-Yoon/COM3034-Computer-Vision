@@ -7,7 +7,7 @@ using namespace std;
 using namespace cv;
 
 int main() {
-    Mat img1 = imread("images/lenna.bmp");
+    Mat img1 = imread("OpenCV/images/lenna.bmp");
     cout << "Width: " << img1.cols << endl;
     cout << "Height: " << img1.rows << endl;
     cout << "Channels: " << img1.channels() << endl;

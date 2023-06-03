@@ -48,10 +48,11 @@ int main() {
     Mat mat5 = Mat_<float>({2, 3}, {1, 2, 3, 4, 5, 6});
     cout << "mat5:" << endl << mat5 << endl << endl;
 
-    mat4.create(256, 256, CV_8UC3);
-    mat5.create(4, 4, CV_32FC1);
-    mat4 = Scalar(255, 0, 0);
-    mat5.setTo(1.f);
+    mat4.create(256, 256, CV_8UC3); // 새 행렬 할당
+    mat5.create(4, 4, CV_32FC1);    // 새 행렬 할당
+
+    mat4 = Scalar(255, 0, 0); // 초기화 방법 1: = 연산자 재정의 사용
+    mat5.setTo(1.f);          // 초기화 방법 2: setTo() 멤버 함수 사용
 
     return 0;
 }

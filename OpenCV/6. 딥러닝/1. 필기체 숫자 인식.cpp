@@ -10,7 +10,7 @@ Point ptPrev(-1, -1);
 void on_mouse(int event, int x, int y, int flags, void* userdata);
 
 int main() {
-    Net net = readNet("models/mnist_cnn.pb");
+    Net net = readNet("OpenCV/models/mnist_cnn.pb"); // 네트워크 생성
     if (net.empty()) {
         cerr << "Network load failed!" << endl;
         return -1;

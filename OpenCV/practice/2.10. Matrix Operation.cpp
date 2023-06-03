@@ -22,6 +22,8 @@ int main() {
     Mat mB(3, 1, CV_32FC1, B);
     Mat result;
 
+    // A * result = B
+    // result = A^-1 * B
     result = mA.inv() * mB;
     
     /*Fill these lines*/
